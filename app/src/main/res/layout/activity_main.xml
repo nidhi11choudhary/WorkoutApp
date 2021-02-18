@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/main_screen_layout_padding">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_screen_image_height"
+            android:contentDescription="@string/image"
+            android:src="@drawable/workout_main_screen"/>
+
+       <LinearLayout
+           android:id="@+id/starts"
+           android:layout_width="@dimen/start_button_size"
+           android:layout_height="@dimen/start_button_size"
+           android:layout_marginTop="@dimen/strat_button_margin_top"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:orientation="horizontal"
+           android:background="@drawable/item_color_accent_border_ripple_backgound">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/start_btn"
+               android:textColor="@color/purple_500"
+               android:textStyle="bold"
+               android:textSize="@dimen/start_button_label_textsize" />
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
